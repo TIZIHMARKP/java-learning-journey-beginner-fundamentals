@@ -27,8 +27,8 @@ public  static void main() {
 
     byte theByte = -128;
     short theShort = 8989;
-    int number = 787878334;
-    long theLong = 9223372036854775807L;  // add an 'L' at the end of long datatype
+    int number = 787_878_334;
+    long theLong = 9_223_372_036_854_775_807L;  // add an 'L' at the end of long datatype
     // The four datatypes allows you to store whole numbers. The difference actually is the size in memory
 
     float pi = 3.14F;  // Ends with 'f' or 'F'
