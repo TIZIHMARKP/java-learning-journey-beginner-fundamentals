@@ -25,25 +25,37 @@ public  static void main() {
         8. char                 2 bytes                Stores a single character/letter or ASCII values
     */
 
-    byte theByte = -128;
-    short theShort = 8989;
-    int number = 787_878_334;
-    long theLong = 9_223_372_036_854_775_807L;  // add an 'L' at the end of long datatype
-    // The four datatypes allows you to store whole numbers. The difference actually is the size in memory
+//    byte theByte = -128;
+//    short theShort = 8989;
+//    int number = 787_878_334;
+//    long theLong = 9_223_372_036_854_775_807L;  // add an 'L' at the end of long datatype
+//    // The four datatypes allows you to store whole numbers. The difference actually is the size in memory
+//
+//    float pi = 3.14F;  // Ends with 'f' or 'F'
+//    double doublePi = 3.1415;  // Float is sufficient for storing 6-7 decimal digits whereas double is sufficient for storing 15 decimal digits
+//
+//    boolean isAdult = true;  // Takes either true or false
+//    char nameInitial = 'T';
+//
+//    System.out.println(theByte);
+//    System.out.println(theShort);
+//    System.out.println(number);
+//    System.out.println(theLong);
+//    System.out.println(pi);
+//    System.out.println(doublePi);
+//    System.out.println(isAdult);
+//    System.out.println(nameInitial);
 
-    float pi = 3.14F;  // Ends with 'f' or 'F'
-    double doublePi = 3.1415;  // Float is sufficient for storing 6-7 decimal digits whereas double is sufficient for storing 15 decimal digits
 
-    boolean isAdult = true;  // Takes either true or false
-    char nameInitial = 'T';
+//    B. REFERENCE DATATYPES (Non Premitive datatypes)
+//    These are very important because majority of your code which you would use to build applications will be made of these
 
-    System.out.println(theByte);
-    System.out.println(theShort);
-    System.out.println(number);
-    System.out.println(theLong);
-    System.out.println(pi);
-    System.out.println(doublePi);
-    System.out.println(isAdult);
-    System.out.println(nameInitial);
+    String name = new String("TIZIH CODES");
+    System.out.println(name.toLowerCase());
+    LocalDate now = LocalDate.now();
+    System.out.println(now.getMonth());
+
+
+
 }
 
