@@ -1,4 +1,6 @@
-
+void main() {
+    
+}
 import java.util.Date;
 
 public  static void main() {
