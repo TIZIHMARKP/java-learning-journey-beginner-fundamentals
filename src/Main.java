@@ -1,8 +1,10 @@
 
 
 public  static void main() {
-    //   IF STATEMENTS
+    //   TERNARY OPERATOR
 //
+
+
 
 
 
