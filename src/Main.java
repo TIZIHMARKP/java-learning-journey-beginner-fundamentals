@@ -1,7 +1,8 @@
 
 
 public  static void main() {
-    //   ARITHMETIC OPERATIONS
+    //   THE MATH CLASS
+
 
 }
 
