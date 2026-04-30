@@ -6,22 +6,11 @@ public  static void main() {
 //    Classes are made up of attributes (the things that define the actual object)
 //    Behaviors of a class is what a class can do
 
+
+
 }
 
-static class Lens{
-    String brand;
-    String focalLength;
-    boolean isPrime;
 
-    Lens(String brand,
-         String focalLength,
-         boolean isPrime
-         ){
-        this.brand = brand;
-        this.focalLength = focalLength;
-        this.isPrime = isPrime;
-    }
-}
 
 
 
