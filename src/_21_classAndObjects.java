@@ -16,7 +16,7 @@ static class Lens{
     Lens(String brand,
          String focalLength,
          boolean isPrime
-         ){
+    ){
         this.brand = brand;
         this.focalLength = focalLength;
         this.isPrime = isPrime;
