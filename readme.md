@@ -13,8 +13,8 @@ This repository contains my first Java programs and notes from completing a comp
 - **IntelliJ IDEA setup** - Installation and configuration
 - **Running Java code** - Executing programs from both terminal and IntelliJ
 
-![Hello World](./screenshots/helloWorld.png)
-![scanner Class](./screenshots/scannerClass.png)
+![Hello World](screenshots/helloWorld.png)
+![scanner Class](screenshots/scannerClass.png)
 
 ### Java Editions
 - Java Standard Edition (SE)
