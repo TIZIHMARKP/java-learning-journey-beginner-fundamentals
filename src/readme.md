@@ -1,4 +1,4 @@
-# Java Learning Journey - Beginner Fundamentals
+# TIZIH MARKO Java Learning Journey - Beginner Fundamentals
 
 This repository contains my first Java programs and notes from completing a comprehensive beginner's course in Java programming.
 
@@ -12,6 +12,9 @@ This repository contains my first Java programs and notes from completing a comp
 ### Development Environment
 - **IntelliJ IDEA setup** - Installation and configuration
 - **Running Java code** - Executing programs from both terminal and IntelliJ
+
+![Hello World](./screenshots/helloWorld.png)
+![scanner Class](./screenshots/scannerClass.png)
 
 ### Java Editions
 - Java Standard Edition (SE)
