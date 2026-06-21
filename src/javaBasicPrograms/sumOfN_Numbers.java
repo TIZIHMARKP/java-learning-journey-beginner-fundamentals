@@ -10,6 +10,7 @@ public class sumOfN_Numbers {
         System.out.println("Enter the range of numbers to find the sum: ");
         int n = scanner.nextInt();
 
+        // using for loop to iterate and sum the numbers
         for(int i = 1; i <= n; i++){
             sum = sum + i;
         }
