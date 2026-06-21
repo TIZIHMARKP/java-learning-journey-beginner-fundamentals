@@ -1,8 +1,15 @@
 package javaBasicPrograms;
 
+import java.util.Scanner;
+
 public class sumOfDigitsOfaNumber {
     public static void main(String[] args){
-        int num = 251, rem = 0, sum = 0, temp;
+        Scanner scanner = new Scanner(System.in);
+        int num, rem = 0, sum = 0, temp;
+
+
+        System.out.println("Enter number to get sum of digits in number: ");
+        num = scanner.nextInt();
         temp = num;
 
         while(num > 0){
