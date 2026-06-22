@@ -35,10 +35,10 @@ public class electricityBill {
         int units = 123;
 
         int [][] rateSlabs = {
-                {300, 8},
-                {200, 7},
-                {100, 6},
-                {0, 5}
+                {300, 8},   // > 300 units
+                {200, 7},   // 200 - 300 units
+                {100, 6},   // 100 - 199 units
+                {0, 5}      // < 100 units
         };
 
         int bill = calculateBill(units, rateSlabs);
@@ -55,7 +55,7 @@ public class electricityBill {
                 return units * slab[1];
             }
         }
-        return units * 5;
+        return units * 5;  // fallback
     }
 
 
