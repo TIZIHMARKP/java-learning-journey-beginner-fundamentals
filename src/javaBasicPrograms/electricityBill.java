@@ -34,6 +34,7 @@ public class electricityBill {
         // ====== 3. USING ARRAY LOOKUP ======
         int units = 123;
 
+        // Defining rate slabs (unitsConsumed, rate}
         int [][] rateSlabs = {
                 {300, 8},   // > 300 units
                 {200, 7},   // 200 - 300 units
@@ -49,13 +50,17 @@ public class electricityBill {
 
     }
 
+    // helper method to calculate eletric bill based on units consumed
+    // rateSlabs: is a 2D array containx rate slabs and it's corresponding rates
+    // it returns the total bill amount
     private static int calculateBill(int units, int[][] rateSlabs){
-        for(int[] slab : rateSlabs){
-            if(units > slab[0]){
+
+        for(int[] slab : rateSlabs){  // enhanced for loop
+            if(units > slab[0]){  // if condition correct, calcu bill by multiplyx units with the rate
                 return units * slab[1];
             }
         }
-        return units * 5;  // fallback
+        return units * 5;  // fallback. executes only if No slabs condition matched
     }
 
 
