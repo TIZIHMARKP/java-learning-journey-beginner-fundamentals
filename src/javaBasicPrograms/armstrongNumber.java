@@ -5,11 +5,16 @@ package javaBasicPrograms;
 // Example: 153, 9474 are Armstrong numbers
 // There are no 2-digit Armstrong numbers
 
+import java.util.Scanner;
+
 public class armstrongNumber {
     public static void main(String args[]){
         int n, arg, sum = 0, r;
+        Scanner scanner = new Scanner(System.in);
 
-        n = 153;  // input value
+//        n = 153;  // input value which is an Armstrong Number
+        System.out.println("Enter number value to check if it is an Armstrong number: ");
+        n = scanner.nextInt();
         arg = n;
 
         for(int i = 1; i < n; i++){
