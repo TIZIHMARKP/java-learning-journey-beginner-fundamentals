@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class armstrongNumber {
     public static void main(String args[]){
 
+    /*
         // =========== 3 digit numbers only ============
         int n, arg, sum = 0, r;
         Scanner scanner = new Scanner(System.in);
@@ -27,11 +28,17 @@ public class armstrongNumber {
         }
 
 
+
         // checking if arg (the original number) is equal to the calculated sum
         if(arg == sum){
             System.out.println("Given number is armstrong number: " + arg);
         } else {
             System.out.println("Given number is not armstrong number: " + arg);
         }
+        */
+
+        // ======== UNIVERSAL ARMSTRONG CHECKER ==========
+
+
     }
 }
