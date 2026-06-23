@@ -9,6 +9,8 @@ import java.util.Scanner;
 
 public class armstrongNumber {
     public static void main(String args[]){
+
+        // =========== 3 digit numbers only ============
         int n, arg, sum = 0, r;
         Scanner scanner = new Scanner(System.in);
 
@@ -17,14 +19,13 @@ public class armstrongNumber {
         n = scanner.nextInt();
         arg = n;          // arg stores the original number because we will modify "n" in the loop
 
-        for(int i = 1; i < n; i++){
-            // while loop extracts each digit and calculate sum of cubes
-            while(n > 0){
-                r = n % 10;     // Getting the last digit (remainder when divided by 10)
-                sum = sum + (r * r * r);    // adding cube of the digit to running sum
-                n = n / 10;             // removing the last digit using integer division by 10
-            }
+        // while loop extracts each digit and calculate sum of cubes
+        while(n > 0){
+            r = n % 10;     // Getting the last digit (remainder when divided by 10)
+            sum = sum + (r * r * r);    // adding cube of the digit to running sum
+            n = n / 10;             // removing the last digit using integer division by 10
         }
+
 
         // checking if arg (the original number) is equal to the calculated sum
         if(arg == sum){
