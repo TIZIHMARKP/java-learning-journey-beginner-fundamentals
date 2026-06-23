@@ -38,7 +38,35 @@ public class armstrongNumber {
         */
 
         // ======== UNIVERSAL ARMSTRONG CHECKER ==========
+        int n, arg, sum = 0, r;
+        Scanner scanner = new Scanner(System.in);
 
+    //        n = 153;  // input value which is an Armstrong Number
+        System.out.println("Enter number value to check if it is an Armstrong number: ");
+        n = scanner.nextInt();
+        arg = n;
+
+        int temp = n;
+        int digitCount = 0;
+
+        while(temp > 0){
+            digitCount++;
+            temp = temp / 10;
+        }
+
+        while(n > 0){
+            r = n % 10;
+
+            sum = sum + (int)Math.pow(r, digitCount);
+
+            n = n / 10;
+        }
+
+        if(arg == sum){
+            System.out.println("Given number is armstrong number: " + arg);
+        } else {
+            System.out.println("Given number is not armstrong number: " + arg);
+        }
 
     }
 }
