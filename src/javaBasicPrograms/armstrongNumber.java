@@ -15,16 +15,18 @@ public class armstrongNumber {
 //        n = 153;  // input value which is an Armstrong Number
         System.out.println("Enter number value to check if it is an Armstrong number: ");
         n = scanner.nextInt();
-        arg = n;
+        arg = n;          // arg stores the original number because we will modify "n" in the loop
 
         for(int i = 1; i < n; i++){
+            // while loop extracts each digit and calculate sum of cubes
             while(n > 0){
-                r = n % 10;
-                sum = sum + (r * r * r);
-                n = n / 10;
+                r = n % 10;     // Getting the last digit (remainder when divided by 10)
+                sum = sum + (r * r * r);    // adding cube of the digit to running sum
+                n = n / 10;             // removing the last digit using integer division by 10
             }
         }
 
+        // checking if arg (the original number) is equal to the calculated sum
         if(arg == sum){
             System.out.println("Given number is armstrong number: " + arg);
         } else {
