@@ -46,20 +46,25 @@ public class armstrongNumber {
         n = scanner.nextInt();
         arg = n;
 
-        int temp = n;
+        // 1st Step: Counting the number of digits in the number
+        int temp = n;  // temporary variable for the digit counting
         int digitCount = 0;
 
         while(temp > 0){
-            digitCount++;
-            temp = temp / 10;
+            digitCount++;       // incrementing count for each digit
+            temp = temp / 10;   // removing last digit
         }
+        // e.g n = 9474 => digitCount = 4
 
+        // 2nd Step: Calculating the sum of each digit raised to the power of digitCount
         while(n > 0){
-            r = n % 10;
+            r = n % 10;       // extracting the rightmost digit
 
+            // calculating r^digitCount
+            // Math.pow(base, exponent) returns a double, so we store it or cast it to int
             sum = sum + (int)Math.pow(r, digitCount);
 
-            n = n / 10;
+            n = n / 10;  // removing the rightmost digit
         }
 
         if(arg == sum){
