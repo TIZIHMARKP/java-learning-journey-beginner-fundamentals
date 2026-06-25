@@ -13,6 +13,7 @@ public class armstrongNumFromOneToThousand {
                 num = num / 10;
             }
 
+            // checking if sum equals the calculated i
             if(sum == i){
                 System.out.println(i + " ");
             }
