@@ -4,7 +4,12 @@ import java.util.Scanner;
 
 public class NumberToWords {
 
+    // Method to print number in words using the suffix "ch"
+    // n = the number to convert (should be between 0 - 99)
+    // ch = the suffix to append (like "Hundred", "Thousand", etc.)
     public void pw(int n, String ch){
+
+        // Array for numbers 1 - 19 (a special case that don't follow pattern)
         String one[] = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", " Eighteen", "Nineteen"};
 
         String ten[] = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
@@ -27,7 +32,7 @@ public class NumberToWords {
     public static void main(String[] args){
         int n;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number to get it's word: ");
+        System.out.print("Enter the number to get it's word between 1 - 99: ");
         n = scanner.nextInt();
 
         System.out.println(n);
