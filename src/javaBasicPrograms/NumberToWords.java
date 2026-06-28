@@ -12,8 +12,11 @@ public class NumberToWords {
         // Array for numbers 1 - 19 (a special case that don't follow pattern)
         String one[] = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", " Eighteen", "Nineteen"};
 
+        // Array for tens: 20, 30, 40, .... 90
+        // Index 0 is empty, index 1 is "Ten"
         String ten[] = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
+        // Only processing if n > 0
         if(n > 0){
             if(n > 19){
                 System.out.print(ten[n/10] + " " + one[n % 10]);
