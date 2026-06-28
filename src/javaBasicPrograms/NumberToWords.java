@@ -1,5 +1,7 @@
 package javaBasicPrograms;
 
+import java.util.Scanner;
+
 public class NumberToWords {
 
     public void pw(int n, String ch){
@@ -23,7 +25,11 @@ public class NumberToWords {
     }
 
     public static void main(String[] args){
-        int n = 28;
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number to get it's word: ");
+        n = scanner.nextInt();
+
         System.out.println(n);
         if(n <= 0){
             System.out.println("Enter numbers greater than 0");
