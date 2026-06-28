@@ -5,7 +5,7 @@ public class NumberToWords {
     public void pw(int n, String ch){
         String one[] = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", " Eighteen", "Nineteen"};
 
-        String ten[] = {"", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        String ten[] = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
         if(n > 0){
             if(n > 19){
@@ -24,7 +24,7 @@ public class NumberToWords {
 
     public static void main(String[] args){
         int n = 28;
-        System.out.print(n);
+        System.out.println(n);
         if(n <= 0){
             System.out.println("Enter numbers greater than 0");
         } else {
