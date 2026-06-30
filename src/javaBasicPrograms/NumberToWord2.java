@@ -50,7 +50,14 @@ public class NumberToWord2 {
         }
 
         return result.toString().trim();
+    }
 
+    public static void main(String[] args){
+        int[] testNumbers = {28, 153, 1001, 50000, 1234567, 0};
+
+        for(int num : testNumbers){
+            System.out.println(num + " = " + numberToWords(num));
+        }
     }
 
 
