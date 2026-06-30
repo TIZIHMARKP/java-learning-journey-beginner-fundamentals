@@ -26,6 +26,33 @@ public class NumberToWord2 {
     }
 
     // Converting a whole number to words which supports up to 99,999,999
+    public static String numberToWords(int n){
+        if(n == 0){
+            return "Zero";
+        }
+
+        StringBuilder result = new StringBuilder();
+
+        int[] values = {10000000, 100000, 1000, 100, 1};
+        String[] suffixes = {"Crore", "Lakh", "Thousand", "Hundred", ""};
+
+        for(int i = 0; i < values.length; i++){
+            int quotient = n / values[i];
+            if(quotient > 0){
+
+                if(values[i] == 100){
+                    result.append(ONES[quotient]).append(" Hundred ");
+                } else {
+                    result.append(convertToWords(quotient)).append(" ").append(suffixes[i]).append(" ");
+                }
+                n = n % values[i];
+            }
+        }
+
+        return result.toString().trim();
+
+    }
+
 
 
 }
