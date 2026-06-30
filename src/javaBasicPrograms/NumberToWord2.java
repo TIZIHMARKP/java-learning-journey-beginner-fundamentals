@@ -8,6 +8,7 @@ public class NumberToWord2 {
     // Index 0 is empty, index 1 is "Ten"
     private static final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
+    // Converting a number between 0 - 99 to words
     private static String convertToWords(int n){
         StringBuilder result = new StringBuilder();
 
