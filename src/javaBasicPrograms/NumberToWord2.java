@@ -6,7 +6,7 @@ public class NumberToWord2 {
 
     // Array for tens: 20, 30, 40, .... 90
     // Index 0 is empty, index 1 is "Ten"
-    private static final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+    private static final String[] TENS = {"", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     // Converting a number between 0 - 99 to words
     private static String convertToWords(int n){
@@ -53,7 +53,7 @@ public class NumberToWord2 {
     }
 
     public static void main(String[] args){
-        int[] testNumbers = {28, 153, 1001, 50000, 1234567, 0};
+        int[] testNumbers = {28, 153, 1001, 10000, 50000, 1234567, 0};
 
         for(int num : testNumbers){
             System.out.println(num + " = " + numberToWords(num));
