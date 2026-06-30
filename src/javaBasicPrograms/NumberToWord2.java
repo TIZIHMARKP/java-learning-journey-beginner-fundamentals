@@ -13,7 +13,15 @@ public class NumberToWord2 {
 
         if(n >= 20){
             result.append(TENS[n / 10 - 1]);
+
+            if(n % 10 != 0){
+                result.append("-").append(ONES[n % 10]);
+            }
+        } else if(n > 0){
+            result.append(ONES[n]);
         }
+
+        return result.toString();
     }
 
 }
