@@ -2,10 +2,10 @@ package javaBasicPrograms;
 
 public class NumberToWord2 {
 
+    // Array for number words
     private static final String[] ONES = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", " Eighteen", "Nineteen"};
 
     // Array for tens: 20, 30, 40, .... 90
-    // Index 0 is empty, index 1 is "Ten"
     private static final String[] TENS = {"", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     // Converting a number between 0 - 99 to words
@@ -34,6 +34,8 @@ public class NumberToWord2 {
         StringBuilder result = new StringBuilder();
 
         int[] values = {10000000, 100000, 1000, 100, 1};
+
+        // defining place values and their suffixes
         String[] suffixes = {"Crore", "Lakh", "Thousand", "Hundred", ""};
 
         for(int i = 0; i < values.length; i++){
@@ -53,6 +55,7 @@ public class NumberToWord2 {
     }
 
     public static void main(String[] args){
+        // Testing with various numbers
         int[] testNumbers = {28, 153, 1001, 10000, 50000, 1234567, 0};
 
         for(int num : testNumbers){
