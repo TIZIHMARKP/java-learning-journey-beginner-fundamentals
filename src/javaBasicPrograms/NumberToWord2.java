@@ -16,7 +16,12 @@ public class NumberToWord2 {
 
         // Case 1: Number is 20 or > (20-99)
         if(n >= 20){
-
+            // Reason for using n/10 - 1?
+            // For n = 28: n/10 = 2
+            // TENS[2] would be "Thirty" which is wrong
+            // But TENS[1] = "Twenty" which is correct
+            // So we subtracted 1 to map: 2 -> 1, 3 -> 2, etc
+            // and this works because TENS[0] is empty
             result.append(TENS[n / 10 - 1]);
 
             if(n % 10 != 0){
