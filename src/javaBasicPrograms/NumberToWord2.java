@@ -24,6 +24,9 @@ public class NumberToWord2 {
             // and this works because TENS[0] is empty
             result.append(TENS[n / 10 - 1]);
 
+            // Checking if there's a ones place digit (not zero)
+            // e.g: 28 => 28%10 = 8, so we add "-Eight"
+            // e.g: 20 => 20%10 = 0, so we don't add anything
             if(n % 10 != 0){
                 result.append("-").append(ONES[n % 10]);
             }
