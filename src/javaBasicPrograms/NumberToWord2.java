@@ -10,9 +10,13 @@ public class NumberToWord2 {
 
     // Converting a number between 0 - 99 to words
     private static String convertToWords(int n){
+        // StringBuilder is more efficient than String concatenation
+        // It allows us to build the string piece by piece without creating multiple String objects
         StringBuilder result = new StringBuilder();
 
+        // Case 1: Number is 20 or > (20-99)
         if(n >= 20){
+
             result.append(TENS[n / 10 - 1]);
 
             if(n % 10 != 0){
@@ -62,7 +66,5 @@ public class NumberToWord2 {
             System.out.println(num + " = " + numberToWords(num));
         }
     }
-
-
 
 }
