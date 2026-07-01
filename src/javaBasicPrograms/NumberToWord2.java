@@ -48,17 +48,28 @@ public class NumberToWord2 {
             return "Zero";
         }
 
+        // StringBuilder to build the final result
         StringBuilder result = new StringBuilder();
 
         int[] values = {10000000, 100000, 1000, 100, 1};
 
-        // defining place values and their suffixes
+        // defining place values and their suffixes using Indian Numbering System
         String[] suffixes = {"Crore", "Lakh", "Thousand", "Hundred", ""};
 
+        // Looping through each place value from largest to smallest
         for(int i = 0; i < values.length; i++){
+            // Calculatx how many of this place value are in the number
+            // e.g: n = 1234567, values[i]=100000 => 1234567/100000 = 12
             int quotient = n / values[i];
+
+            // Only processing if quotient > 0 (if this place value exist in the number)
             if(quotient > 0){
 
+                /* Special case for "Hundred"
+                - When values[i] == 100, quotient will be 0-9 which is a single digit
+                - e.g: 153 => 153/100 = 1 => "One Hundred"
+                - We use ONES[quotient] directly coz it's a single digit
+                */
                 if(values[i] == 100){
                     result.append(ONES[quotient]).append(" Hundred ");
                 } else {
