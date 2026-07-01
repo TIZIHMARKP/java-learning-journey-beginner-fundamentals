@@ -65,7 +65,7 @@ public class NumberToWord2 {
             // Only processing if quotient > 0 (if this place value exist in the number)
             if(quotient > 0){
 
-                /* Special case for "Hundred"
+                /** Special case for "Hundred"
                 - When values[i] == 100, quotient will be 0-9 which is a single digit
                 - e.g: 153 => 153/100 = 1 => "One Hundred"
                 - We use ONES[quotient] directly coz it's a single digit
@@ -73,12 +73,26 @@ public class NumberToWord2 {
                 if(values[i] == 100){
                     result.append(ONES[quotient]).append(" Hundred ");
                 } else {
+                    /**
+                     - For all other place values (Crore, Lakh, Thousand, and units)
+                     - The quotient can be 2 digits (e.g., 12 Lakh, 34 Thousand)
+                     - So we use convertToWords() to handle numbers 0-99
+                     */
+
+                    // Appending the word representation + suffix + space
                     result.append(convertToWords(quotient)).append(" ").append(suffixes[i]).append(" ");
                 }
+                // IMPORTANT: Update n to the remainder
+                // After processing a place value, we only care about the remaining digits
+                // Example: n=1234567, after processing Lakh (12 Lakh)
+                //   n = 1234567 % 100000 = 34567 (remaining digits)
                 n = n % values[i];
             }
+            // if quotient == 0, skiping this place value and continue to next
         }
 
+        // Converting StringBuilder to String and remove leading/trailing spaces
+        // trim() removes extra spaces at the beginning and end
         return result.toString().trim();
     }
 
@@ -86,6 +100,7 @@ public class NumberToWord2 {
         // Testing with various numbers
         int[] testNumbers = {28, 153, 1001, 10000, 50000, 1234567, 0};
 
+        // Looping through each test number & printing the result
         for(int num : testNumbers){
             System.out.println(num + " = " + numberToWords(num));
         }
