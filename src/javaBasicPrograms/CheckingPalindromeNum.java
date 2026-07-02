@@ -11,11 +11,38 @@ import java.util.Scanner;
 
 public class CheckingPalindromeNum {
     public static void main(String[] args){
+        // pal = stores a copy of original number
+        // r = stores the remainder (last digit) in each iteration
+        // rev = stores the reversed number
         int n, pal, r, rev=0;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number to check if it is palindrome number: ");
         n = scanner.nextInt();
         pal = n;
+
+        /**
+         * ========= REVERSING THE NUMBER ==========
+         * while loop extracts the digtis from right to left and builds the reversed number
+         * e.g for n = 123
+         * Iteration 1: n = 123
+         *      r = 123 % 10 = 3
+         *      rev = 0 * 10 + 3 = 3    (1st digit in rightmost number)
+         *      n = 123 / 10 = 12       (removing the last digit from original)
+         *
+         * Iteration 2: n = 12
+         *      r = 12 % 10 = 2
+         *      rev = 3 * 10 + 2 = 32   (shift the existing digit left & add new digit)
+         *      n = 12 / 10 = 1         (removing the last digit from original)
+         *
+         * Iteration 3: n = 1
+         *      r = 1 % 10 = 1            (We get the rightmost digit)
+         *      rev = 32 * 10 + 1 = 321   (shift the existing digit left & add new digit)
+         *      n = 1 / 10 = 0            (removing the last digit from original)
+         *
+         *  Iteration 4: n = 0 => Loop condition is false => exit loop
+         *
+         *  Result: Original number 123 => Reversed number 321
+         */
 
         while(n > 0){
             r = n % 10;
