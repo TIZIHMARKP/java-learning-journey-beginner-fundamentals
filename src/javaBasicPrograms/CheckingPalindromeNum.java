@@ -43,17 +43,19 @@ public class CheckingPalindromeNum {
          *
          *  Result: Original number 123 => Reversed number 321
          */
-
         while(n > 0){
             r = n % 10;
             rev = rev * 10 + r;
             n = n / 10;
         }
 
+        // Checking if number is Plaindrome
         if(rev == pal){
             System.out.println("The given number is palindrome: " + rev);
         } else {
             System.out.println("The given number is not palindrome: " + rev);
         }
+
+        scanner.close();
     }
 }
