@@ -1,8 +1,13 @@
 package javaBasicPrograms;
 
+import java.util.Scanner;
+
 public class CheckingPalindromeNum {
     public static void main(String[] args){
-        int n=121, pal, r, rev=0;
+        int n, pal, r, rev=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number to check if it is palindrome number: ");
+        n = scanner.nextInt();
         pal = n;
 
         while(n > 0){
