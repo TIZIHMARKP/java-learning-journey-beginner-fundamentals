@@ -1,11 +1,16 @@
 package javaBasicPrograms;
 
+import java.util.Scanner;
+
 public class PalindromeUptoN {
     public static void main(String[] args){
-        int n, b, rev = 0;
-        int limit = 50;
+        int n, b, limit, rev = 0;
+        Scanner scanner = new Scanner(System.in);
+//        int limit = 50;
 
-        System.out.println("Palindrome numbers from 1 to N: ");
+        System.out.println("Enter limit to check Palindrome Number: ");
+        limit = scanner.nextInt();
+        System.out.println("===== Palindrome numbers from 1 to " + limit + " ====");
 
         for(int i = 1; i <= limit; i++){
             n = i;
