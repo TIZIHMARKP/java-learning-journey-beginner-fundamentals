@@ -70,5 +70,7 @@ public class PalindromeUptoN {
             }
             rev = 0;
         }
+
+        scanner.close();
     }
 }
