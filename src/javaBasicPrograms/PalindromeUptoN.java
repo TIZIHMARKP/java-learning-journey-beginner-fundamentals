@@ -1,6 +1,28 @@
 package javaBasicPrograms;
-
 import java.util.Scanner;
+/**
+ * Program to find and display all palindrome numbers from 1 to a given limit.
+ *
+ * New Concept: This program uses a nested loop structure:
+ * - Outer loop: Iterates through each number from 1 to the limit
+ * - Inner Loop: Reverses each number to check if it's a palindrome
+ *
+ * Example output for limit = 50:
+ * =========== Palindrome numbers from 1 to 50 ===
+ *  1
+ *  2
+ *  3
+ *  4
+ *  5
+ *  6
+ *  7
+ *  8
+ *  9
+ *  11
+ *  22
+ *  33
+ *  44
+ */
 
 public class PalindromeUptoN {
     public static void main(String[] args){
