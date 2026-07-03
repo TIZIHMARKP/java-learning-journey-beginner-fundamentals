@@ -40,13 +40,31 @@ public class PalindromeUptoN {
         limit = scanner.nextInt();
         System.out.println("===== Palindrome numbers from 1 to " + limit + " ====");
 
+        /**
+         * ===========================================================
+         * OUTER LOOP: iterate through each number from 1 to limit
+         * ===========================================================
+         * This is the main loop that checks each number individually
+         *
+         * KEY CONCEPT: We must first reset 'rev' to 0 for each number
+         * if we don't reset, the reversed number would keep growing
+        */
         for(int i = 1; i <= limit; i++){
+            // copying the current number to 'n' to preserve the original 'i' value for comparison
+            // 'i' stays unchanged, while 'n' is modified in the inner loop
             n = i;
+
+            /**
+             * ==================================
+             * INNER LOOP: Reverse the current number
+             * =======================================
+             */
             while (n > 0){
-                b = n % 10;
-                rev = rev * 10 + b;
-                n = n / 10;
+                b = n % 10;           // Get last digit
+                rev = rev * 10 + b;   // Build reversed number
+                n = n / 10;           // Remove last digit
             }
+            // checking if number is palindrome
             if(rev == i){
                 System.out.println(i + " ");
             }
