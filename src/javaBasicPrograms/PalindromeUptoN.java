@@ -26,6 +26,12 @@ import java.util.Scanner;
 
 public class PalindromeUptoN {
     public static void main(String[] args){
+        // Variable Declarations:
+        // n = temporary variable to hold current number being processed
+        // b = stores the last digit (remainder), similar to 'r' in previous code
+        // limit = user input (how many numbers to check)
+        // rev = stores the reversed number
+
         int n, b, limit, rev = 0;
         Scanner scanner = new Scanner(System.in);
 //        int limit = 50;
