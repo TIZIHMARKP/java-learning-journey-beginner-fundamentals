@@ -1,6 +1,14 @@
 package javaBasicPrograms;
 
 import java.util.Scanner;
+/**
+ * Program to find all prime numbers from 1 to a given limit.
+ * Also calculates the sum and average of all prime numbers found.
+ *
+ * A prime number is a number that has exactly 2 factors: 1 and itself.
+ * Examples: 2, 3, 5, 7, 11, 13, 17, 19, 23, ...
+ * Note: 1 is NOT a prime number (only has 1 factor)
+ */
 
 public class PrimeNumberUptoN {
 
