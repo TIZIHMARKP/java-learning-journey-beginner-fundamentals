@@ -24,6 +24,22 @@ public class PrimeNumberUptoN {
         limit = scanner.nextInt();
         System.out.println("Prime numbers from 1 to " + limit + " are: ");
 
+        /**
+         * ====================================================
+         * OUTER LOOP: Check each number from 1 to limit
+         * ================================================
+         *
+         * For each number 'i', we check if it's prime by counting its factors
+         * A prime number has exactly 2 factors: 1 and itself
+         *
+         * Example for i = 7:
+         *   Check divisibility by: 7, 6, 5, 4, 3, 2, 1
+         *   Only 7 and 1 divide 7 → 2 factors → PRIME ✓
+         *
+         * Example for i = 6:
+         *   Check divisibility by: 6, 5, 4, 3, 2, 1
+         *   6, 3, 2, 1 divide 6 → 4 factors → NOT PRIME ✗
+         */
         for (i = 1; i <= limit; i++){
             int counter = 0;
             for(num = i; num >= 1; num--){
