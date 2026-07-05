@@ -13,6 +13,10 @@ import java.util.Scanner;
 public class PrimeNumberUptoN {
 
     public static void main(String[] args){
+        // Variable declarations:
+        // limit - user input: upper limit to check for prime numbers
+        // num   - inner loop variable to test divisibility
+        // i     - outer loop variable (current number being tested)
         int limit, num = 0, i = 0;
 
         Scanner scanner = new Scanner(System.in);
