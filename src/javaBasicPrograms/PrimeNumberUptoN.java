@@ -24,6 +24,10 @@ public class PrimeNumberUptoN {
         limit = scanner.nextInt();
         System.out.println("Prime numbers from 1 to " + limit + " are: ");
 
+        int sumOfPrimes = 0;
+        int primeCount = 0;
+        double average = 0.0;
+
         /**
          * ====================================================
          * OUTER LOOP: Check each number from 1 to limit
@@ -72,7 +76,6 @@ public class PrimeNumberUptoN {
              *   num = 1 → 7 % 1 == 0 → counter++ (counter = 2)
              *   Loop ends → counter = 2 → PRIME
              *
-             * WHY THIS WORKS:
              *   - We start from 'i' and go down to 1
              *   - Every number is divisible by itself and 1
              *   - If any other number divides it, counter > 2
@@ -80,11 +83,11 @@ public class PrimeNumberUptoN {
              */
             for(num = i; num >= 1; num--){
                 if(i % num == 0){
-                    counter = counter + 1;
+                    counter = counter + 1;  // Increminting factor counter
                 }
             }
             if(counter == 2){
-                System.out.print(i + " ");
+                System.out.print(i + " ");  // Printing the prime number
             }
         }
     }
