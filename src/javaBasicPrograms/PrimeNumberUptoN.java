@@ -86,9 +86,21 @@ public class PrimeNumberUptoN {
                     counter = counter + 1;  // Increminting factor counter
                 }
             }
+
+            // Checking if Current Number is Prime
             if(counter == 2){
                 System.out.print(i + " ");  // Printing the prime number
+
+                sumOfPrimes = sumOfPrimes + i;
+                primeCount = primeCount + i;
             }
         }
+
+        System.out.println(); // New Line
+        System.out.println("Sum of prime Numbers: " + sumOfPrimes);
+
+//        System.out.println("Total prime numbers found: " + primeCount);
+
+
     }
 }
