@@ -55,6 +55,29 @@ public class PrimeNumberUptoN {
              *
              */
             int counter = 0;
+            /**
+             * ============================================================
+             * INNER LOOP: Count factors of the current number
+             * ======================================
+             *
+             * This loop checks if 'num' divides 'i' evenly (i % num == 0)
+             *
+             * LOGIC: For i = 7
+             *   num = 7 → 7 % 7 == 0 → counter++ (counter = 1)
+             *   num = 6 → 7 % 6 == 0? NO
+             *   num = 5 → 7 % 5 == 0? NO
+             *   num = 4 → 7 % 4 == 0? NO
+             *   num = 3 → 7 % 3 == 0? NO
+             *   num = 2 → 7 % 2 == 0? NO
+             *   num = 1 → 7 % 1 == 0 → counter++ (counter = 2)
+             *   Loop ends → counter = 2 → PRIME
+             *
+             * WHY THIS WORKS:
+             *   - We start from 'i' and go down to 1
+             *   - Every number is divisible by itself and 1
+             *   - If any other number divides it, counter > 2
+             *   - Prime numbers have EXACTLY 2 factors
+             */
             for(num = i; num >= 1; num--){
                 if(i % num == 0){
                     counter = counter + 1;
