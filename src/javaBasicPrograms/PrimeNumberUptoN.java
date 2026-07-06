@@ -41,6 +41,19 @@ public class PrimeNumberUptoN {
          *   6, 3, 2, 1 divide 6 → 4 factors → NOT PRIME ✗
          */
         for (i = 1; i <= limit; i++){
+            /**
+             * ======================================================
+             * COUNTER RESET: CRITICAL FOR EACH NUMBER
+             * =============================================
+             *
+             * 'counter' is declared INSIDE the outer loop
+             * This means it's reinitialized to 0 for each number we test
+             *
+             * If we declared it outside, it would keep counting factors
+             * from previous numbers which will give us WRONG RESULTS
+             *
+             *
+             */
             int counter = 0;
             for(num = i; num >= 1; num--){
                 if(i % num == 0){
