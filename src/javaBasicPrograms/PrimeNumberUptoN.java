@@ -96,19 +96,29 @@ public class PrimeNumberUptoN {
             }
         }
 
-        System.out.println(); // New Line
+        /**
+         * ===================================
+         * PRINT RESULTS Of NEW ADDITION
+         * =====================
+         *
+         */
+
+         System.out.println(); // New Line
 
         // Displaying sum of primes
         System.out.println("Sum of prime Numbers: " + sumOfPrimes);
 
         System.out.println("Total prime numbers found: " + primeCount);
 
+        // Calculating and displaying the average
         if(primeCount > 0){
             average = sumOfPrimes / (double) primeCount;
             System.out.println("Average of prime numbers: " + average);
         } else{
             System.out.println("Average of prime numbers: 0 (No prime numbers found");
         }
+
+        scanner.close();
 
     }
 }
