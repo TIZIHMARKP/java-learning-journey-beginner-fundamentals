@@ -79,7 +79,7 @@ public class PyramidPattern1 {
                 System.out.print("*");
             }
 
-            System.out.println();
+            System.out.println();   // Moving to next line after each row
 
         }
 
