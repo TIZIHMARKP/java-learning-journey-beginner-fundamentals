@@ -54,8 +54,14 @@ public class PyramidPattern1 {
 
         System.out.println("=== Equilateral Triangle (Pyramid) ===");
 
-        for(i = 0; i < n; i++){
-
+        for(i = 0; i < n; i++){  // Outer loop for rows
+            /**
+             * 1st STep: Printing leading spaces
+             * These spaces center the triangle
+             * As i increases, spaces decrease
+             * e.g for n = 4, i = 0:
+             * j = 0, 1, 2, => prints 3 spaces
+            */
             for(j = 0; j < n - i - 1; j++){
                 System.out.print(" ");
             }
