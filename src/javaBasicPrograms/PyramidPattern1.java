@@ -65,7 +65,16 @@ public class PyramidPattern1 {
             for(j = 0; j < n - i - 1; j++){
                 System.out.print(" ");
             }
-
+            /**
+             * 2nd STep: Printing stars
+             * The number of stars follows odd number sequence: 1, 3, 5, 7, .....
+             * Formula: stars = 2 * i + 1
+             * e.g for n = 4, i = 0:
+             * j = 0 => prints star
+             *
+             * for n = 4, i = 1:
+             * j = 0, 1, 2 => prints 3 stars
+             */
             for( j = 0; j < 2 * i + 1; j++){
                 System.out.print("*");
             }
