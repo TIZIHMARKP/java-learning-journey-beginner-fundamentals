@@ -52,6 +52,24 @@ public class PyramidPattern1 {
          *   So this means stars double by 2, while spaces reduces by 1
          */
 
+        System.out.println("=== Equilateral Triangle (Pyramid) ===");
+
+        for(i = 0; i < n; i++){
+
+            for(j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+
+            for( j = 0; j < 2 * i + 1; j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
+
+        System.out.println();
+
 
 
 
