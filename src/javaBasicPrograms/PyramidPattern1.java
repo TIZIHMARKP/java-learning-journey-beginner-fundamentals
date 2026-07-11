@@ -24,6 +24,37 @@ public class PyramidPattern1 {
         }
 
         System.out.println();
+
+
+
+        /**
+         * ====================================================
+         * EQUILATERAL TRIANGLE (PYRAMID)
+         * =============================================
+         *
+         * For n = 4, the output would be:
+         *
+         *    *      ← Row 0: 3 spaces, 1 star
+         *   ***     ← Row 1: 2 spaces, 3 stars
+         *  *****    ← Row 2: 1 space,  5 stars
+         * *******   ← Row 3: 0 spaces, 7 stars
+         *
+         * FORMULAS:
+         *   spaces = n - i - 1    (number of leading spaces)
+         *   stars = 2 * i + 1      (number of stars in each row)
+         *
+         * Reason for FORMULAS?
+         *   - Row 0: spaces = 4-0-1 = 3, stars = 2*0+1 = 1
+         *   - Row 1: spaces = 4-1-1 = 2, stars = 2*1+1 = 3
+         *   - Row 2: spaces = 4-2-1 = 1, stars = 2*2+1 = 5
+         *   - Row 3: spaces = 4-3-1 = 0, stars = 2*3+1 = 7
+         *
+         *   So this means stars double by 2, while spaces reduces by 1
+         */
+
+
+
+
     }
 
 }
