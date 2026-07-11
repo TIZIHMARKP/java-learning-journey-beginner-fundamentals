@@ -29,7 +29,7 @@ public class PyramidPattern1 {
 
         /**
          * ====================================================
-         * EQUILATERAL TRIANGLE (PYRAMID)
+         * PATTERN 2: EQUILATERAL TRIANGLE (PYRAMID)
          * =============================================
          *
          * For n = 4, the output would be:
@@ -85,6 +85,17 @@ public class PyramidPattern1 {
 
         System.out.println();
 
+
+        /**
+         * ======================================================
+         * PATTERN 3: RIGHT-ALIGNED RIGHT TRIANGLE
+         * =================================================
+         *
+         *    *
+         *   **
+         *  ***
+         * ****
+         */
 
 
 
