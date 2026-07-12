@@ -112,6 +112,17 @@ public class PyramidPattern1 {
         }
         System.out.println();
 
+        /**
+         * =====================================================
+         * PATTERN 4: INVERTED EQUILATERAL TRIANGLE
+         * ==============================================
+         *
+         * *******
+         *  *****
+         *   ***
+         *    *
+         */
+
 
 
 
