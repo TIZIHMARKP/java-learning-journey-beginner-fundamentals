@@ -100,11 +100,11 @@ public class PyramidPattern1 {
         System.out.println("======== RIGHT-ALIGNED RIGHT TRIANGLE ====== ");
 
         for(i = 0; i < n; i++){
-
+            // Printing spaces first right alignment
             for(j = 0; j < n - i - 1; j++){
                 System.out.print(" ");
             }
-
+            // Printing stars
             for(j = 0; j <= i; j++){
                 System.out.print("*");
             }
