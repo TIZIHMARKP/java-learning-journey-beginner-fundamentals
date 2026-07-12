@@ -99,6 +99,18 @@ public class PyramidPattern1 {
 
         System.out.println("======== RIGHT-ALIGNED RIGHT TRIANGLE ====== ");
 
+        for(i = 0; i < n; i++){
+
+            for(j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+
+            for(j = 0; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
 
 
 
