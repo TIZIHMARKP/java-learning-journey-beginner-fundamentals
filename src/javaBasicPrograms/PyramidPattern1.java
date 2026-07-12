@@ -97,6 +97,10 @@ public class PyramidPattern1 {
          * ****
          */
 
+        System.out.println("======== RIGHT-ALIGNED RIGHT TRIANGLE ====== ");
+
+
+
 
 
     }
