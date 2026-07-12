@@ -159,14 +159,14 @@ public class PyramidPattern1 {
                 System.out.print(" ");
             }
             for(j = 0; j < 2 * i + 1; j++){
-                System.out.println("*");
+                System.out.print("*");
             }
             System.out.println();
         }
 
         for(i = n - 2; i >= 0; i--){
             for(j = 0; j < n - i - 1; j++){
-                System.out.println(" ");
+                System.out.print(" ");
             }
             for(j = 0; j < 2 * i + 1; j++){
                 System.out.print("*");
