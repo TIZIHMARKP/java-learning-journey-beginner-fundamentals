@@ -138,6 +138,21 @@ public class PyramidPattern1 {
         System.out.println();
 
 
+        /**
+         * ============================================================
+         * PATTERN 5: DIAMOND (Combination of pyramid + inverted pyramid)
+         * ===========================================
+         *
+         *    *
+         *   ***
+         *  *****
+         * *******
+         *  *****
+         *   ***
+         *    *
+         */
+
+
 
 
     }
