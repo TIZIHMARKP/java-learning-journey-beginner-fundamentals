@@ -153,7 +153,7 @@ public class PyramidPattern1 {
          */
 
         System.out.println("======= (Combination of pyramid + inverted pyramid) ======= ");
-
+        // Upper half of pyramid
         for(i = 0; i < n; i++){
             for(j = 0; j < n - i - 1; j++){
                 System.out.print(" ");
@@ -163,7 +163,7 @@ public class PyramidPattern1 {
             }
             System.out.println();
         }
-
+        // Lower half of pyramid without the middle row
         for(i = n - 2; i >= 0; i--){
             for(j = 0; j < n - i - 1; j++){
                 System.out.print(" ");
