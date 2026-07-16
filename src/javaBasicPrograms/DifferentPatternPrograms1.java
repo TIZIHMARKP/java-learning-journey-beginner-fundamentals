@@ -47,7 +47,7 @@ public class DifferentPatternPrograms1 {
          * *********
          */
 
-        System.out.println("==== Pattern 2 =====");
+//        System.out.println("==== Pattern 2 =====");
         for(i = 1; i <= n; i++){
             for(j = 1; j <= i; j++){
                 System.out.print("*");
@@ -66,10 +66,19 @@ public class DifferentPatternPrograms1 {
         }
 
         /**
-         * Patten 3:
+         * Patten 3: Combine Pattern 1 + 2
+         * *********
+         * **** ****
+         * ***   ***
+         * **     **
+         * *       *
+         * *       *
+         * **     **
+         * ***   ***
+         * **** ****
+         * *********
          *
          */
-
 
 
     }
