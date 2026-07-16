@@ -11,6 +11,16 @@ public class DifferentPatternPrograms1 {
         n = scanner.nextInt();
         p = n;
         q = n;
+
+        /**
+         * Pattern 1:
+         * *********
+         * **** ****
+         * ***   ***
+         * **     **
+         * *       *
+         */
+
         for(i = n; i >= 1; i--){
             for(j = 1; j <= i; j++){
                 System.out.print("*");
@@ -27,5 +37,8 @@ public class DifferentPatternPrograms1 {
             p--;
             System.out.println();
         }
+
+
+
     }
 }
