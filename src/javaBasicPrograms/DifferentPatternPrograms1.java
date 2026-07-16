@@ -38,6 +38,11 @@ public class DifferentPatternPrograms1 {
             System.out.println();
         }
 
+        /**
+         * Patten 2:
+         */
+
+
 
 
     }
