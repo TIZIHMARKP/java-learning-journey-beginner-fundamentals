@@ -40,8 +40,35 @@ public class DifferentPatternPrograms1 {
 
         /**
          * Patten 2:
+         * *       *
+         * **     **
+         * ***   ***
+         * **** ****
+         * *********
          */
 
+        System.out.println("==== Pattern 2 =====");
+        for(i = 1; i <= n; i++){
+            for(j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            for(k = q*2-2; k > 1; k--){
+                System.out.print(" ");
+            }
+            for(m = i; m != 0; m--){
+                if(m == n){
+                    continue;
+                }
+                System.out.print("*");
+            }
+            System.out.println();
+            q--;
+        }
+
+        /**
+         * Patten 3:
+         *
+         */
 
 
 
