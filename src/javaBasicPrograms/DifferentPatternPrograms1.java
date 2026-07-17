@@ -110,6 +110,11 @@ public class DifferentPatternPrograms1 {
             System.out.println();
         }
 
+        /**
+         * PART 2: Pattern 2 (Increasing triangle with gap)
+         * Same logic as Pattern 2
+         */
+
 
 
 
