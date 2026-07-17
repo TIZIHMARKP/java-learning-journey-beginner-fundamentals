@@ -80,6 +80,12 @@ public class DifferentPatternPrograms1 {
          *
          */
 
+        // Resetting p and q to n (Original values)
+        p = n;
+        q = n;
+
+
+
 
     }
 }
