@@ -84,6 +84,32 @@ public class DifferentPatternPrograms1 {
         p = n;
         q = n;
 
+        System.out.println("==== Pattern 3 (Combined) =====");
+        /**
+         * PART 1: Pattern 1 (Decreasing triangle with gap)
+         * Same logic as Pattern 1
+         */
+        for(i = n; i >= 1; i--){
+            // Left side stars
+            for(j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            // Middle spaces
+            for(k = p * 2; k < n*2-1; k++){
+                System.out.print(" ");
+            }
+            // Right side stars
+            for(l = i; l != 0; l--){
+                if(l == n){
+                    continue;
+                }
+                System.out.print("*");
+            }
+
+            p--;
+            System.out.println();
+        }
+
 
 
 
