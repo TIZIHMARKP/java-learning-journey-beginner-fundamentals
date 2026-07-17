@@ -116,9 +116,12 @@ public class DifferentPatternPrograms1 {
          * Same logic as Pattern 2
          */
         for(i = 1; i <= n; i++){
+            // left side stars
             for(j = 1; j <= i; j++){
                 System.out.print("*");
             }
+
+            // Middle spaces
             for(k = q * 2 - 2; k > 1; k--){
                 System.out.print(" ");
             }
