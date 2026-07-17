@@ -47,7 +47,8 @@ public class DifferentPatternPrograms1 {
          * *********
          */
 
-//        System.out.println("==== Pattern 2 =====");
+        System.out.println();
+        System.out.println("==== Pattern 2 =====");
         for(i = 1; i <= n; i++){
             for(j = 1; j <= i; j++){
                 System.out.print("*");
@@ -114,6 +115,25 @@ public class DifferentPatternPrograms1 {
          * PART 2: Pattern 2 (Increasing triangle with gap)
          * Same logic as Pattern 2
          */
+        for(i = 1; i <= n; i++){
+            for(j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            for(k = q * 2 - 2; k > 1; k--){
+                System.out.print(" ");
+            }
+
+            for(m = i; m != 0; m--){
+                if(m == n){
+                    continue;
+                }
+                System.out.print("*");
+            }
+
+            System.out.println();
+            q--;
+        }
+
 
 
 
