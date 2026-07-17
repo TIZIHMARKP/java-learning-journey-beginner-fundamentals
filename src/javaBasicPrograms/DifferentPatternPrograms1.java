@@ -126,6 +126,7 @@ public class DifferentPatternPrograms1 {
                 System.out.print(" ");
             }
 
+            // Right side stars
             for(m = i; m != 0; m--){
                 if(m == n){
                     continue;
