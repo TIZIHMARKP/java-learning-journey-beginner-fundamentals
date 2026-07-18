@@ -9,6 +9,12 @@ public class DifferentPatternPrograms1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the value of n: ");
         n = scanner.nextInt();
+        /**
+         * p and q are used as counters that decrease with each row
+         * They control the number of spaces in the middle
+         * p = n, q = n (both start at n and decrement)
+         * p is used in Pattern 1, q is used in patter 2
+         */
         p = n;
         q = n;
 
