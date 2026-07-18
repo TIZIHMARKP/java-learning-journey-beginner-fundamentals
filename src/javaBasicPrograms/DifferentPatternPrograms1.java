@@ -25,8 +25,8 @@ public class DifferentPatternPrograms1 {
          *
          * For n = 5, output should be:
          * *********  => Row 0: 5 stars + 0 spaces + 4 stars = 9 stars total
-         * **** ****
-         * ***   ***
+         * **** ****  => Row 1: 4 stars + 1 space + 4 stars = 8 stars + 1 space
+         * ***   ***  => Row 2: 3 stars + 3 space + 3 stars = 6 stars + 3 spaces
          * **     **
          * *       *
          */
