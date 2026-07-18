@@ -19,8 +19,12 @@ public class DifferentPatternPrograms1 {
         q = n;
 
         /**
-         * Pattern 1:
-         * *********
+         * =================
+         * PATTERN 1: Triangle with decreasing stars and increasing Gap
+         * ======================
+         *
+         * For n = 5, output should be:
+         * *********  => Row 0: 5 stars + 0 spaces + 4 stars = 9 stars total
          * **** ****
          * ***   ***
          * **     **
