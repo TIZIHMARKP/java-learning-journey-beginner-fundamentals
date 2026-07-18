@@ -28,7 +28,7 @@ public class DifferentPatternPrograms1 {
          * **** ****  => Row 1: 4 stars + 1 space + 4 stars = 8 stars + 1 space
          * ***   ***  => Row 2: 3 stars + 3 spaces + 3 stars = 6 stars + 3 spaces
          * **     **  => Row 3: 2 stars + 5 spaces + 2 stars = 4 stars + 5 spaces
-         * *       *
+         * *       *  => Row 4: 1 star + 7 spaces + 1 star = 2 stars + 7 spaces
          */
 
         for(i = n; i >= 1; i--){
