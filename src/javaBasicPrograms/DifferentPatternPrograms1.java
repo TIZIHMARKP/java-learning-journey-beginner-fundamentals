@@ -29,6 +29,12 @@ public class DifferentPatternPrograms1 {
          * ***   ***  => Row 2: 3 stars + 3 spaces + 3 stars = 6 stars + 3 spaces
          * **     **  => Row 3: 2 stars + 5 spaces + 2 stars = 4 stars + 5 spaces
          * *       *  => Row 4: 1 star + 7 spaces + 1 star = 2 stars + 7 spaces
+         *
+         * Logic:
+         * - Left side: Stars decrease from n to 1
+         * - Middle: Spaces increase (odd numbers: 1, 2, 5, 7...)
+         * - Right side: Stars decrease from n-1 to 1 (skipping first row)
+         *
          */
 
         for(i = n; i >= 1; i--){
