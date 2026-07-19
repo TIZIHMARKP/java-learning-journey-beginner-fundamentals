@@ -57,6 +57,9 @@ public class DifferentPatternPrograms1 {
              * Explanation for n = 5:
              * Row 0 (i=5, p=5): k=10; k<9 => false => 0 spaces
              * Row 1 (i=4, p=4): k=8; k<9 => true => prints 1 space
+             * Row 2 (i=3, p=3): k=6; k<9 => prints 3 spaces (6, 7, 8)
+             * Row 3 (i=2, p=2): k=4; k<9 => prints 5 spaces (4, 5, 6, 7, 8)
+             * Row 4 (i=1, p=1):
              */
             for(k = p*2; k < n*2-1; k++){
                 System.out.print(" ");
