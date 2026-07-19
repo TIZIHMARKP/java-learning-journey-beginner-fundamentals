@@ -47,6 +47,13 @@ public class DifferentPatternPrograms1 {
             for(j = 1; j <= i; j++){
                 System.out.print("*");
             }
+            /**
+             * PART 2: Middle spaces
+             *
+             * KEY LOGIC: k = p * 2; k < n * 2 - 1
+             *
+             * This would create the gap in the middle that increases each row
+             */
             for(k = p*2; k < n*2-1; k++){
                 System.out.print(" ");
             }
