@@ -38,6 +38,12 @@ public class DifferentPatternPrograms1 {
          */
 
         for(i = n; i >= 1; i--){  // Outer loop: rows from n down to 1
+            /**
+             * PART 1: Left side stars
+             * prints stars from n down to 1
+             * e.g for n=5, i=5: prints 5 stars
+             * e.g for n=5, i=4: prints 4 stars
+             */
             for(j = 1; j <= i; j++){
                 System.out.print("*");
             }
