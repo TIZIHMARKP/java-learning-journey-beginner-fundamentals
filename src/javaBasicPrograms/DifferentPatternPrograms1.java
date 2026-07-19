@@ -53,6 +53,10 @@ public class DifferentPatternPrograms1 {
              * KEY LOGIC: k = p * 2; k < n * 2 - 1
              *
              * This would create the gap in the middle that increases each row
+             *
+             * Explanation for n = 5:
+             * Row 0 (i=5, p=5): k=10; k<9 => false => 0 spaces
+             * Row 1 (i=4, p=4): k=8; k<9 => true => prints 1 space
              */
             for(k = p*2; k < n*2-1; k++){
                 System.out.print(" ");
