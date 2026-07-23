@@ -111,9 +111,9 @@ public class DifferentPatternPrograms1 {
          * for n=5, output should be:
          * *       *   => Row 0:
          * **     **   => Row 1:
-         * ***   ***
-         * **** ****
-         * *********
+         * ***   ***   => Row 2:
+         * **** ****   => Row 3:
+         * *********   => Row 4
          */
 
         System.out.println();
