@@ -88,7 +88,7 @@ public class DifferentPatternPrograms1 {
              */
             for(l = i; l != 0; l--){
                 if(l == n){
-                    continue;
+                    continue;  // Skipping this iteration (not printing star)
                 }
                 System.out.print("*");
             }
