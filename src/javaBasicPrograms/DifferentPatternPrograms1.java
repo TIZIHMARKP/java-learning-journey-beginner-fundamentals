@@ -92,10 +92,15 @@ public class DifferentPatternPrograms1 {
                 }
                 System.out.print("*");
             }
-            p--;
-            System.out.println();
+            p--;   // Decreasing p for next row (reducing spaces in next iteration)
+            System.out.println();   // new line
         }
 
+
+        System.out.println("\n========================================");
+        System.out.println("PATTERN 2: Increasing Triangle with Gap");
+        System.out.println("========================================\n");
+        System.out.println("For n = " + n + ":");
         /**
          * Patten 2:
          * *       *
