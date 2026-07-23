@@ -102,7 +102,9 @@ public class DifferentPatternPrograms1 {
         System.out.println("========================================\n");
         System.out.println("For n = " + n + ":");
         /**
-         * Patten 2:
+         * ========================================
+         * Patten 2: Triangle with Increasing Stars and Decreasing Gap
+         * =====================================================
          * *       *
          * **     **
          * ***   ***
