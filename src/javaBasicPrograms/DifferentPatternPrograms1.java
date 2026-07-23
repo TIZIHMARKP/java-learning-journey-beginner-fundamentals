@@ -64,6 +64,16 @@ public class DifferentPatternPrograms1 {
             for(k = p*2; k < n*2-1; k++){
                 System.out.print(" ");      // printing spaces
             }
+            /**
+             * PART 3: Right side stars
+             *
+             * prints stars from i down to 1, but it skips when l == n
+             * THis would create the right side of the pattern
+             *
+             *
+             *
+             *
+             */
             for(l = i; l != 0; l--){
                 if(l == n){
                     continue;
