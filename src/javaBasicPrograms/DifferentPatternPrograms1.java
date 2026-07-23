@@ -73,6 +73,16 @@ public class DifferentPatternPrograms1 {
              * e.g for n=5, i=5:
              * l=5,4,3,2,1  l==n? skip 5 => prints 4,3,2,1 (4 stars)
              *
+             * e.g for n=5, i=4:
+             * l=4,3,2,1 => no skip => prints 4,3,2,1 (4 stars)
+             *
+             * e.g for n=5, i=1:
+             * l=1 => no skip => prints 1 (1 star)
+             *
+             * The reason why we skip l==n is because
+             *  - First row (i=n) has no gap, so we don't duplicate the middle
+             *  - This would then create the perfect V-shpe
+             *
              *
              *
              */
