@@ -105,8 +105,12 @@ public class DifferentPatternPrograms1 {
          * ========================================
          * Patten 2: Triangle with Increasing Stars and Decreasing Gap
          * =====================================================
-         * *       *
-         * **     **
+         *
+         * This is an inverse of pattern 1
+         *
+         * for n=5, output should be:
+         * *       *   => Row 0:
+         * **     **   => Row 1:
          * ***   ***
          * **** ****
          * *********
