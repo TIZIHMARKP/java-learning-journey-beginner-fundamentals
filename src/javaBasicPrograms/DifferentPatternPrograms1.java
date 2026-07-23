@@ -70,6 +70,8 @@ public class DifferentPatternPrograms1 {
              * prints stars from i down to 1, but it skips when l == n
              * THis would create the right side of the pattern
              *
+             * e.g for n=5, i=5:
+             * l=5,4,3,2,1  l==n? skip 5 => prints 4,3,2,1 (4 stars)
              *
              *
              *
