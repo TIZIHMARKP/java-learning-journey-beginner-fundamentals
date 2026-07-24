@@ -132,6 +132,12 @@ public class DifferentPatternPrograms1 {
             for(j = 1; j <= i; j++){
                 System.out.print("*");
             }
+            /**
+             * PART 2: Middle spaces
+             *
+             * Main logic: k= q * 2 - 2; k>1; k--
+             * THis is going to create the decreasing gap in the middle
+             */
             for(k = q*2-2; k > 1; k--){
                 System.out.print(" ");
             }
