@@ -123,7 +123,12 @@ public class DifferentPatternPrograms1 {
 
         System.out.println();
         System.out.println("==== Pattern 2 =====");
-        for(i = 1; i <= n; i++){
+        for(i = 1; i <= n; i++){   // Outer loop: rows from 1 to n
+            /**
+             * Printing stars from 1 to i (increasing)
+             * e.g fro n=5, i=1: prints 1 star
+             * e.g for n=5, i=5: prints 5 stars
+             */
             for(j = 1; j <= i; j++){
                 System.out.print("*");
             }
