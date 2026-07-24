@@ -109,8 +109,8 @@ public class DifferentPatternPrograms1 {
          * This is an inverse of pattern 1
          *
          * for n=5, output should be:
-         * *       *   => Row 0:
-         * **     **   => Row 1:
+         * *       *   => Row 0: 1 star + 7 spaces + 1 star = 2 stars + 7 spaces
+         * **     **   => Row 1: 2 stars + 5 spaces + 2 stars = 4 stars + 5 spaces
          * ***   ***   => Row 2:
          * **** ****   => Row 3:
          * *********   => Row 4
