@@ -137,6 +137,9 @@ public class DifferentPatternPrograms1 {
              *
              * Main logic: k= q * 2 - 2; k>1; k--
              * THis is going to create the decreasing gap in the middle
+             *
+             * e.g for n = 5:
+             *   Row 0 (i=1, q=5): k=8; k>1 => prints 7 spaces (8,7,6,5,4,3,2)
              */
             for(k = q*2-2; k > 1; k--){
                 System.out.print(" ");
