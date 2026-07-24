@@ -140,6 +140,10 @@ public class DifferentPatternPrograms1 {
              *
              * e.g for n = 5:
              *   Row 0 (i=1, q=5): k=8; k>1 => prints 7 spaces (8,7,6,5,4,3,2)
+             *   Row 1 (i=2, q=4): k=6; k>1 => prints 5 spaces (6,5,4,3,2)
+             *   Row 2 (i=3, q=3): k=4; k>1 => prints 3 spaces (4,3,2)
+             *   Row 3 (i=4, q=2): k=2; k>1 => prints 1 space  (2)
+             *   Row 4 (i=5, q=1): k=0; k>1 => false → 0 spaces
              */
             for(k = q*2-2; k > 1; k--){
                 System.out.print(" ");
