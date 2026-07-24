@@ -114,6 +114,11 @@ public class DifferentPatternPrograms1 {
          * ***   ***   => Row 2: 3 stars + 3 spaces + 3 stars = 6 stars + 3 spaces
          * **** ****   => Row 3: stars + 1 space  + 4 stars = 8 stars + 1 space
          * *********   => Row 4: stars + 0 spaces + 4 stars = 9 stars total
+         *
+         * Logic:
+         * - Left side: stars are increasing from 1 to n
+         * - Middle: Spaces decrease (odd numbers: 7, 5, 3, 1, 0)
+         * - Right side: Stars increase from 1 to n-1 (skipping last row)
          */
 
         System.out.println();
