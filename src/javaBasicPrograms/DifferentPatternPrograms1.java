@@ -178,12 +178,19 @@ public class DifferentPatternPrograms1 {
         }
 
         /**
-         * Patten 3: Combine Pattern 1 + 2
-         * *********
-         * **** ****
-         * ***   ***
-         * **     **
-         * *       *
+         * ======================================
+         * Patten 3: Combination of Pattern 1 and 2
+         * ===========================================
+         *
+         * This pattern first prints Pattern 1 (Decreasing)
+         * Then prints Pattern 2 (Increasing)
+         *
+         * for n = 5, output would be:
+         * *********    <= Pattern 1 (Row 0)
+         * **** ****    <= Pattern 1 (Row 1)
+         * ***   ***    <= Pattern 1 (Row 2)
+         * **     **    <= Pattern 1 (Row 3)
+         * *       *    <= Pattern 1 (Row 4)
          * *       *
          * **     **
          * ***   ***
