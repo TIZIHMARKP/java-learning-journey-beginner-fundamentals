@@ -159,6 +159,13 @@ public class DifferentPatternPrograms1 {
              * e.g for n=5, i=4:
              * m=4,3,2,1 => no skip => prints 4 stars
              *
+             * e.g for n=5, i=5
+             *  m=5,4,3,2,1 => m==n? skip 5 => prints 4,3,2,1 (4 stars)
+             *
+             * Reason for skip m==n?
+             *  - last row (i=n) has no gap, so we don't duplicate the middle star
+             *  - This is then going to create the perfect V-shape
+             *
             */
             for(m = i; m != 0; m--){
                 if(m == n){
