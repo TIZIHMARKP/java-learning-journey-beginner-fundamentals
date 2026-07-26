@@ -169,12 +169,12 @@ public class DifferentPatternPrograms1 {
             */
             for(m = i; m != 0; m--){
                 if(m == n){
-                    continue;
+                    continue;  // skipping this iteration without printing star
                 }
                 System.out.print("*");
             }
-            System.out.println();
-            q--;
+            System.out.println(); // new line
+            q--;  // decreasing q for next row which reduces spaces in next iteration
         }
 
         /**
