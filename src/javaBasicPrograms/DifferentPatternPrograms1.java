@@ -197,6 +197,9 @@ public class DifferentPatternPrograms1 {
          * **** ****    <= Pattern 2 (Row 3)
          * *********    <= Pattern 2 (Row 4)
          *
+         * This would create a diamond like shape
+         *
+         * We would reset p and q to n because they decremented in pattern 1 and pattern 2
          */
 
         // Resetting p and q to n (Original values)
