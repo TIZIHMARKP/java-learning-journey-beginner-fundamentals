@@ -191,11 +191,11 @@ public class DifferentPatternPrograms1 {
          * ***   ***    <= Pattern 1 (Row 2)
          * **     **    <= Pattern 1 (Row 3)
          * *       *    <= Pattern 1 (Row 4)
-         * *       *
-         * **     **
-         * ***   ***
-         * **** ****
-         * *********
+         * *       *    <= Pattern 2 (Row 0)
+         * **     **    <= Pattern 2 (Row 1)
+         * ***   ***    <= Pattern 2 (Row 2)
+         * **** ****    <= Pattern 2 (Row 3)
+         * *********    <= Pattern 2 (Row 4)
          *
          */
 
