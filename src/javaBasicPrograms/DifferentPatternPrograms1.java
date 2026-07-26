@@ -146,8 +146,13 @@ public class DifferentPatternPrograms1 {
              *   Row 4 (i=5, q=1): k=0; k>1 => false → 0 spaces
              */
             for(k = q*2-2; k > 1; k--){
-                System.out.print(" ");
+                System.out.print(" ");    // printing space
             }
+            /**
+             * Part 3: Right side stars
+             * printing stars from i down to 1, but skips when m == n
+             * this would create the right side of the pattern
+            */
             for(m = i; m != 0; m--){
                 if(m == n){
                     continue;
