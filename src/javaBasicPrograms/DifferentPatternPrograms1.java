@@ -152,6 +152,13 @@ public class DifferentPatternPrograms1 {
              * Part 3: Right side stars
              * printing stars from i down to 1, but skips when m == n
              * this would create the right side of the pattern
+             *
+             * e.g for n=5, i=1:
+             *  m=1 => no skip => prints 1 star
+             *
+             * e.g for n=5, i=4:
+             * m=4,3,2,1 => no skip => prints 4 stars
+             *
             */
             for(m = i; m != 0; m--){
                 if(m == n){
