@@ -259,6 +259,26 @@ public class DifferentPatternPrograms1 {
             q--;
         }
 
+        /**
+         * ============================
+         * PATTERN 4: Hallow Diamond
+         * ========================================
+         *
+         * For n = 5, output would be:
+
+         *       *
+         *      * *
+         *     *   *
+         *    *     *
+         *   *       *
+         *    *     *
+         *     *   *
+         *      * *
+         *       *
+         *
+         */
+
+
 
 
 
