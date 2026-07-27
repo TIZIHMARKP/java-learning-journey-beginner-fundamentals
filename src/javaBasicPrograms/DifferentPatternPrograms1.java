@@ -277,6 +277,10 @@ public class DifferentPatternPrograms1 {
          *       *
          *
          */
+        System.out.println("\n========================================");
+        System.out.println("PATTERN 4: Hollow Diamond");
+        System.out.println("==================================\n");
+        System.out.println("For n = " + n + ":");
 
 
 
