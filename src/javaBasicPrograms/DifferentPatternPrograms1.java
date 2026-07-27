@@ -281,13 +281,14 @@ public class DifferentPatternPrograms1 {
         System.out.println("PATTERN 4: Hollow Diamond");
         System.out.println("==================================\n");
 
+        // Upper half of hollow diamond
         for(i = 1; i <= n; i++){
-            //
+            // Printing leading spaces
             for(j = 1; j <= n - i; j++){
                 System.out.print(" ");
             }
 
-            //
+            // Printing stars with spaces in between
             for(j = 1; j <= 2 * i - 1; j++){
                 //
                 if(j == 1 || j == 2 * i - 1){
