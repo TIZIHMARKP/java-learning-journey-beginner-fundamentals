@@ -290,7 +290,7 @@ public class DifferentPatternPrograms1 {
 
             // Printing stars with spaces in between
             for(j = 1; j <= 2 * i - 1; j++){
-                //
+                // printing star at first and last position, space in between
                 if(j == 1 || j == 2 * i - 1){
                     System.out.print("*");
                 } else {
