@@ -280,7 +280,26 @@ public class DifferentPatternPrograms1 {
         System.out.println("\n========================================");
         System.out.println("PATTERN 4: Hollow Diamond");
         System.out.println("==================================\n");
-        System.out.println("For n = " + n + ":");
+
+        for(i = 1; i <= n; i++){
+            //
+            for(j = 1; j <= n - i; j++){
+                System.out.print(" ");
+            }
+
+            //
+            for(j = 1; j <= 2 * i - 1; j++){
+                //
+                if(j == 1 || j == 2 * i - 1){
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+
+        }
 
 
 
