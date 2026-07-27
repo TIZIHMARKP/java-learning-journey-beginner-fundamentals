@@ -300,9 +300,9 @@ public class DifferentPatternPrograms1 {
             System.out.println();
         }
 
-        //
+        // Lower half of hollow diamond
         for(i = n - 1; i >= 1; i--){
-            //
+            // Printing leading spaces
             for(j = 1; j <= n - i; j++){
                 System.out.print(" ");
             }
