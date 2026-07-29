@@ -337,6 +337,10 @@ public class DifferentPatternPrograms1 {
          * *********
          */
 
+        System.out.println("\n======================================");
+        System.out.println("PATTERN 5: Hourglass Pattern");
+        System.out.println("==================================\n");
+
 
 
 
