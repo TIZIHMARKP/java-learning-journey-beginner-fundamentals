@@ -341,6 +341,18 @@ public class DifferentPatternPrograms1 {
         System.out.println("PATTERN 5: Hourglass Pattern");
         System.out.println("==================================\n");
 
+        //
+        for(i = n; i >= 1; i--){
+            //
+            for(j = 1; j <= n - i; j++){
+                System.out.print(" ");
+            }
+            //
+            for(j = 1; j <= 2 * i - 1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
 
 
