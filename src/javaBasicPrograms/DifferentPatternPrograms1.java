@@ -361,7 +361,7 @@ public class DifferentPatternPrograms1 {
                 System.out.print(" ");
             }
             //
-            for(j = 1; j <= 2 * 1 - 1; j++){
+            for(j = 1; j <= 2 * i - 1; j++){
                 System.out.print("*");
             }
             System.out.println();
