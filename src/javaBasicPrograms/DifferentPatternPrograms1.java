@@ -341,13 +341,13 @@ public class DifferentPatternPrograms1 {
         System.out.println("PATTERN 5: Hourglass Pattern");
         System.out.println("==================================\n");
 
-        //
+        // Upper half of hourglass (inverted triangle)
         for(i = n; i >= 1; i--){
-            //
+            // printing leading spaces
             for(j = 1; j <= n - i; j++){
                 System.out.print(" ");
             }
-            //
+            // printing stars (odd numbers: 9, 7,.....)
             for(j = 1; j <= 2 * i - 1; j++){
                 System.out.print("*");
             }
