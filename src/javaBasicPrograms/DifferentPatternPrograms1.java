@@ -318,6 +318,28 @@ public class DifferentPatternPrograms1 {
             }
             System.out.println();
         }
+        System.out.println();
+
+        /**
+         * ========================================================
+         * PATTERN 5: Hourglass Pattern
+         * ================================================
+         *
+         * For n = 5, output should be:
+         * *********
+         *  *******
+         *   *****
+         *    ***
+         *     *
+         *    ***
+         *   *****
+         *  *******
+         * *********
+         */
+
+
+
+
 
 
 
