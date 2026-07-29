@@ -360,19 +360,14 @@ public class DifferentPatternPrograms1 {
             for(j = 1; j <= n - i; j++){
                 System.out.print(" ");
             }
-            //
+            // print stars (odd numbers: 3, 5, ......)
             for(j = 1; j <= 2 * i - 1; j++){
                 System.out.print("*");
             }
             System.out.println();
         }
 
-
-
-
-
-
-
+        scanner.close(); // closing scanner to prevent resources from leaking
 
 
     }
