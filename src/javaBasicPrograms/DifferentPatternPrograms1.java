@@ -354,6 +354,19 @@ public class DifferentPatternPrograms1 {
             System.out.println();
         }
 
+        //
+        for(i = 2; i <= n; i++){
+            //
+            for(j = 1; j <= n - i; j++){
+                System.out.print(" ");
+            }
+            //
+            for(j = 1; j <= 2 * 1 - 1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
 
 
 
