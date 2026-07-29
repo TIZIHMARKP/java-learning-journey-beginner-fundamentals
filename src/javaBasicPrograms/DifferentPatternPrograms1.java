@@ -354,9 +354,9 @@ public class DifferentPatternPrograms1 {
             System.out.println();
         }
 
-        //
+        // Lower half of triangle
         for(i = 2; i <= n; i++){
-            //
+            // printing spaces
             for(j = 1; j <= n - i; j++){
                 System.out.print(" ");
             }
